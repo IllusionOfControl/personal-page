@@ -1,12 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Header } from "../components";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
+import { Hero, About, Skills, Projects, Contacts, Footer } from "../components";
 
 export default function Home() {
   return (
@@ -18,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero/>
-        <About></About>
+        <About/>
         <Skills/>
         <Projects/>
         <Contacts/>
