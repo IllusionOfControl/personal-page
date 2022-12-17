@@ -1,0 +1,16 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: pull
+    image: plugins/docker
+    settings:
+      registry: registry.rainbow.vm
+      repo: registry.rainbow.vm/personal_portfolio
+      tags: latest
+      insecure: true
+      username: illusion_of_control
+      password: 271828183
+
+image_pull_secrets:
+  - dockerconfigjson
