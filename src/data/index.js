@@ -1,13 +1,23 @@
 const skills = [
   {name: "Python", tools: ["FastAPI", "Django", "Flask", "OpenCV"]},
-  {name: "JavaScript", tools: ["React", "Angular", "Vue", "Node"]},
+  {name: "JavaScript", tools: ["React", "Next"]},
   {name: "C/C++", tools: ["SFML", "OpenGL", "STL 11"]},
   {name: "Java", tools: ["Core"]},
   {name: "Linux", tools: ["Bash", "Docker"]},
-  {name: "Databases", tools: ["SQLite", "Redis"]}
+  {name: "Databases", tools: ["PostgreSQL", "SQLite", "Redis"]}
 ]
 
 const projects = [
+  {
+    title: "Todoist clone",
+    img: "/projects/todoist-clone.jpg",
+    stack: ["React", "Tailwind", "PostgreSQL", "FastAPI"],
+    description: "Todoist is a web service and a set of task management software. This project implements a copy of it.",
+    links: {
+      github: "https://github.com/IllusionOfControl/todoist-clone",
+      // demo: "https://example.com/"
+    }
+  },
   {
     title: "Lorem ipsum",
     img: "/projects/example.jpg",

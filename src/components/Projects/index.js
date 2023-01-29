@@ -19,7 +19,7 @@ const Hero = () => {
                   <div className="flex flex-col">
                     <div
                       className="relative h-[200px] w-full rounded-t-xl bg-neutral-800 lg:h-[300px]">
-                      <Image src={project.img} alt="Portfolio" width={300} height={300}
+                      <Image src={project.img} alt="Portfolio" width={700} height={700}
                              className="absolute h-full w-full z-10 rounded-t-xl object-contain"/>
                     </div>
                     <div className="h-fit p-5 space-y-3">
