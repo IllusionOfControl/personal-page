@@ -37,6 +37,15 @@ const Hero = () => {
               </li>
             )
           })}
+
+          <li className="mt-10 xl:mt-0 text-center sm:col-span-2">
+            <h3 className="text-3xl xl:text-3xl pb-6 font-mono">And many more...</h3>
+            <Link
+              className="px-4 py-3 border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-300 active:bg-steel-700 transition-colors"
+              href="https://github.com/IllusionOfControl">
+              visit my GitHub 🚀
+            </Link>
+          </li>
         </ul>
       </div>
     </section>
