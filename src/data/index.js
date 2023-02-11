@@ -9,45 +9,58 @@ const skills = [
 
 const projects = [
   {
-    title: "Todoist clone",
-    stack: ["React", "Tailwind", "PostgreSQL", "FastAPI"],
-    description: "Todoist is a web service and a set of task management software. This project implements a copy of it.",
-    links: {
-      github: "https://github.com/IllusionOfControl/todoist-clone",
-      // demo: "https://example.com/"
-    }
-  },
-  {
-    title: "USB Computer Status Display",
-    stack: ["С", "Microcontrollers/PIC", "USB", "C#"],
-    description:  "The device displays system information about the status of the computer: " +
-                  "CPU, Ram, Disk, Network load, uptime, world datetime. " +
-                  "The device consists of a PIC18 microcontroller and a 40x04 display and a USB adapter.",
-    links: {
-      github: "https://github.com/",
-      demo: "https://example.com/"
-    }
-  },
-  {
     title: "Personal page",
     stack: ["Next.js", "JavaScript", "Tailwind"],
     description: "A static website to present me & my projects. My first use of the Next.js framework",
     links: {
-      github: "https://github.com/",
-      demo: "https://example.com/"
+      github: "https://github.com/IllusionOfControl/personal-portfolio",
+      demo: "https://illusion-of-control-portfolio.vercel.app/"
+    }
+  },
+  {
+    title: "React projects",
+    stack: ["React", "Tailwind", "Redux"],
+    description: "A wide variety of small projects using React.",
+    links: {
+      github: "https://github.com/IllusionOfControl/react-projects",
     }
   },
   {
     title: "Todoist clone",
-    img: "/projects/todoist-clone.jpg",
     stack: ["React", "Tailwind", "PostgreSQL", "FastAPI"],
     description: "Todoist is a web service and a set of task management software. This project implements a copy of it.",
     links: {
       github: "https://github.com/IllusionOfControl/todoist-clone",
-      // demo: "https://example.com/"
     }
   },
-
+  {
+    title: "USB Computer Status Display",
+    stack: ["C#", "С", "Microcontrollers/PIC", "USB"],
+    description:  "The device displays system information about the status of the computer: " +
+                  "CPU, Ram, Disk, Network load, uptime, world datetime. " +
+                  "The device consists of a PIC18 microcontroller and a 40x04 display and a USB adapter. " +
+                  "For the Windows system only!",
+    links: {
+      github: "https://github.com/IllusionOfControl/UCSD-PIC-Source",
+    }
+  },
+  {
+    title: "BSUIR repo",
+    stack: ["Algorithms", "Data Structures", "Computer Graphics", "Databases"],
+    description:  "The repository contains laboratory and practical work done at the university. " +
+                  "Contains a variety of computer science examples",
+    links: {
+      github: "https://github.com/IllusionOfControl/todoist-clone",
+    }
+  },
+  {
+    title: "Minesweeper",
+    stack: ["C++", "SFML"],
+    description: "Own implementation of the legendary Minesweeper game.",
+    links: {
+      github: "https://github.com/IllusionOfControl/todoist-clone",
+    }
+  },
 ]
 
 const location = {
