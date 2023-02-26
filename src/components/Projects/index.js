@@ -3,7 +3,7 @@ import {FaGithub, FaLink} from 'react-icons/fa'
 import {projects} from '../../data'
 
 
-const Hero = () => {
+const Projects = () => {
   return (
     <section className="bg-neutral-900" id="projects-section">
       <div
@@ -52,4 +52,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Projects;

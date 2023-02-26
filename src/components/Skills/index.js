@@ -1,6 +1,6 @@
 import {skills} from '../../data'
 
-const Hero = () => {
+const Skills = () => {
   return (
     <section className="bg-black bg-neutral-800 py-16 sm:py-28" id="skills-section">
       <div className="max-w-[1240px] md:grid grid-cols-[2fr_4fr] px-4 mx-auto md:px-10">
@@ -24,4 +24,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Skills;
