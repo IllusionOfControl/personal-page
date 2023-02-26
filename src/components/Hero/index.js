@@ -3,7 +3,7 @@ import { FaAngleDoubleDown } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen flex flex-col justify-center mx-auto bg-neutral-800">
+    <section className="w-full h-screen flex flex-col justify-center mx-auto bg-neutral-800" id="hero-section">
       <div className="max-w-[1240px] flex justify-between flex-wrap-reverse lg:flex-nowrap px-4 mx-auto sm:px-10 gap-4">
         <div className="m-auto">
           <h2 className="text-3xl mb-2">Hi, my name is </h2>

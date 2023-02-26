@@ -5,7 +5,7 @@ import {projects} from '../../data'
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-900">
+    <section className="bg-neutral-900" id="projects-section">
       <div
         className="max-w-[1240px] grid grid-cols-1 sm:grid-cols-[2fr_4fr] px-4 mx-auto md:px-10 py-16 sm:py-28 gap-4">
         <h1 className="text-5xl w-full">Featured <span className="text-rose-800">projects</span></h1>
