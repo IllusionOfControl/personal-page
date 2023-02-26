@@ -7,6 +7,8 @@ const skills = [
   {name: "Databases", tools: ["PostgreSQL", "SQLite", "Redis"]}
 ]
 
+const cvPdfUrl = "https://drive.google.com/file/d/17oqcjAg94V_Kgj7geIr3CN2pF_QDLGsr/view?usp=share_link"
+
 const projects = [
   {
     title: "Personal page",
