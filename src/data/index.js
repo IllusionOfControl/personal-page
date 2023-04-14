@@ -1,9 +1,9 @@
 const skills = [
   {name: "Python", tools: ["FastAPI", "Django", "Flask", "OpenCV"]},
-  {name: "JavaScript", tools: ["React", "Next"]},
+  {name: "JavaScript", tools: ["React", "Next.js"]},
   {name: "C/C++", tools: ["SFML", "OpenGL", "STL 11"]},
-  {name: "Java", tools: ["Core"]},
-  {name: "Linux", tools: ["Bash", "Docker"]},
+  {name: "Java", tools: ["Core", "Spring Boot"]},
+  {name: "Tools", tools: ["Shell", "Docker", "Postman", "Git"]},
   {name: "Databases", tools: ["PostgreSQL", "SQLite", "Redis"]}
 ]
 
