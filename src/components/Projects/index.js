@@ -10,10 +10,11 @@ const Projects = () => {
         className="max-w-[1240px] grid grid-cols-1 sm:grid-cols-[2fr_4fr] px-4 mx-auto md:px-10 py-16 sm:py-28 gap-4">
         <h1 className="text-5xl w-full">Featured <span className="text-rose-800">projects</span></h1>
         <ul className="pt-20 grid md:grid-cols-2 gap-4 md:gap-8">
+
           {projects.map((project, i) => {
             return (
               <li key={i}
-                  className="rounded-md border shadow-md border-neutral-700 hover:border-rose-900 transition-colors">
+                  className="rounded-md border shadow-md border-neutral-700 hover:border-rose-700 duration-500 transition-colors">
                 <div
                   className="h-full flex flex-col justify-between">
                   <div className="flex flex-col flex-grow h-fit p-5 space-y-3">
@@ -29,7 +30,7 @@ const Projects = () => {
                     <p className="text-sm md:text-base grow">{project.description}</p>
                     <div className="w-full flex flex-wrap align-bottom">
                       {project.stack.map((technology, i) =>
-                        <div key={i} className="px-3 mx-1 my-1 rounded-xl bg-neutral-700">{technology}</div>)
+                        <div key={i} className="text-[0.9rem] px-3 mx-1 my-1 rounded-xl bg-neutral-700">{technology}</div>)
                       }
                     </div>
                   </div>
@@ -41,9 +42,9 @@ const Projects = () => {
           <li className="mt-10 xl:mt-0 text-center sm:col-span-2">
             <h3 className="text-3xl xl:text-3xl pb-6 font-mono">And many more...</h3>
             <Link
-              className="px-4 py-3 border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-300 active:bg-steel-700 transition-colors"
+              className="px-4 py-3 border rounded-2xl border-rose-700 hover:bg-rose-700 hover:text-neutral-300 active:bg-steel-700 transition-colors"
               href="https://github.com/IllusionOfControl">
-              visit my GitHub 🚀
+              🚀 visit my GitHub
             </Link>
           </li>
         </ul>
