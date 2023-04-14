@@ -63,6 +63,50 @@ const projects = [
       github: "https://github.com/IllusionOfControl/todoist-clone",
     }
   },
+  {
+    title: "Candle",
+    stack: ["Python", "Django", "DRF", "Bootstrap", "Unittest"],
+    description: "An educational project that allows you to catalog books by author, book series, publisher and tags. " +
+      "Allows you to search.",
+    links: {
+      github: "https://github.com/IllusionOfControl/candle",
+    }
+  },
+  {
+    title: "Pixie",
+    stack: ["Golang", "Telegram"],
+    description: "This is a Golang Telegram bot that can pixilize images. " +
+      "It uses the go-telegram-bot-api library to interact with the Telegram Bot API " +
+      "and the gocv library for image processing.",
+    links: {
+      github: "https://github.com/IllusionOfControl/todoist-clone",
+    }
+  },
+  {
+    title: "Coub-dl",
+    stack: ["Golang", "FFmpeg"],
+    description: "Coub-dl is a Go application that allows you to download videos from the coub.com",
+    links: {
+      github: "https://github.com/IllusionOfControl/coub-dl",
+    }
+  },
+  {
+    title: "torrent-dump",
+    stack: ["Python", "Flask"],
+    description: "Personal project for organization torrent files, that used Bencode parser.",
+    links: {
+      github: "https://github.com/IllusionOfControl/torrent_dump",
+    }
+  },
+  {
+    title: "Octoprofile",
+    stack: ["JavaScript", "Next.js", "Github API"],
+    description: "A nicer look at your personal GitHub Profile! With charts!",
+    links: {
+      github: "https://github.com/IllusionOfControl/octoprofile",
+    }
+  },
+
 ]
 
 const location = {
