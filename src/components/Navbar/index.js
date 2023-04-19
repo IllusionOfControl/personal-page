@@ -16,25 +16,25 @@ const NavBar = () => {
           }
         >
           <Link
-            href="#about-section"
+            href={"#about-section"}
             className="sm:text-2xl hover:text-rose-800"
           >
             About
           </Link>
           <Link
-            href="#skills-section"
+            href={"#skills-section"}
             className="sm:text-2xl hover:text-rose-600"
           >
             Skills
           </Link>
           <Link
-            href="#projects-section"
+            href={"#projects-section"}
             className="sm:text-2xl hover:text-rose-600"
           >
             Projects
           </Link>
           <Link
-            href="#contacts-section"
+            href={"#contacts-section"}
             className="sm:text-2xl hover:text-rose-600"
           >
             Contacts
