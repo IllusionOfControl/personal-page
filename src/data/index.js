@@ -52,7 +52,7 @@ const projects = [
     description: "The repository contains laboratory and practical work done at the university. " +
       "Contains a variety of computer science examples",
     links: {
-      github: "https://github.com/IllusionOfControl/todoist-clone",
+      github: "https://github.com/IllusionOfControl/bsuir-repo",
     }
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     stack: ["C++", "SFML"],
     description: "Own implementation of the legendary Minesweeper game.",
     links: {
-      github: "https://github.com/IllusionOfControl/todoist-clone",
+      github: "https://github.com/IllusionOfControl/minesweeper",
     }
   },
   {
@@ -79,7 +79,7 @@ const projects = [
       "It uses the go-telegram-bot-api library to interact with the Telegram Bot API " +
       "and the gocv library for image processing.",
     links: {
-      github: "https://github.com/IllusionOfControl/todoist-clone",
+      github: "https://github.com/IllusionOfControl/pixie",
     }
   },
   {
