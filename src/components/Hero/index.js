@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { FaAngleDoubleDown } from 'react-icons/fa'
-import Link from "next/link";
+import Link from 'next/link';
+import {cvPdfUrl} from '../../data'
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
           </p>
           <Link
             className="px-4 py-3 border rounded-2xl border-rose-700 hover:bg-rose-700 hover:text-neutral-300 active:bg-steel-700 transition-colors"
-            href="https://drive.google.com/file/d/17oqcjAg94V_Kgj7geIr3CN2pF_QDLGsr/view?usp=share_link">
+            href={cvPdfUrl}>
             📃 View my CV
           </Link>
         </div>

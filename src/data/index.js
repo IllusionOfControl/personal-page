@@ -106,7 +106,6 @@ const projects = [
       github: "https://github.com/IllusionOfControl/octoprofile",
     }
   },
-
 ]
 
 const location = {
@@ -127,4 +126,4 @@ const socials = {
   linkedin_link: "https://www.linkedin.com/in/skorokhod-sergey/",
 }
 
-export {skills, projects, socials, location};
+export {skills, projects, socials, location, cvPdfUrl};
