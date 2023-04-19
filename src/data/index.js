@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: "Todoist clone",
-    stack: ["JavaScript", "Python", "React", "Tailwind", "PostgreSQL", "FastAPI"],
+    stack: ["JavaScript", "Python", "React", "PostgreSQL", "FastAPI"],
     description: "Todoist is a web service and a set of task management software. This project implements a copy of it.",
     links: {
       github: "https://github.com/IllusionOfControl/todoist-clone",
