@@ -1,9 +1,9 @@
 const skills = [
-  {name: "Python", tools: ["FastAPI", "Django", "Flask", "OpenCV"]},
-  {name: "JavaScript", tools: ["React", "Next.js"]},
+  {name: "Python", tools: ["FastAPI", "Django/DRF", "Flask", "OpenCV", "Celery"]},
+  {name: "JavaScript", tools: ["React", "Next.js", "Redux"]},
   {name: "C/C++", tools: ["SFML", "OpenGL", "STL 11"]},
   {name: "Java", tools: ["Core", "Spring Boot"]},
-  {name: "Tools", tools: ["Shell", "Docker", "Postman", "Git"]},
+  {name: "Tools", tools: ["Shell", "Docker", "Postman", "Git", "WebRTC"]},
   {name: "Databases", tools: ["PostgreSQL", "SQLite", "Redis"]}
 ]
 
@@ -104,6 +104,15 @@ const projects = [
     description: "A nicer look at your personal GitHub Profile! With charts!",
     links: {
       github: "https://github.com/IllusionOfControl/octoprofile",
+      demo: "https://octoprofile-six.vercel.app/"
+    }
+  },
+  {
+    title: "Alien Invasion Game",
+    stack: ["Python", "Pygame"],
+    description: "This is a simple alien invasion game written in Python and Pygame. ",
+    links: {
+      github: "https://github.com/IllusionOfControl/alien-invasion-game.git",
     }
   },
 ]
