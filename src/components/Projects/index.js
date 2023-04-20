@@ -9,7 +9,7 @@ const Projects = () => {
         <h1 className="text-5xl w-full">
           Featured <span className="text-rose-800">projects</span>
         </h1>
-        <ul className="pt-20 grid md:grid-cols-2 gap-4 md:gap-8">
+        <ul className="pt-20 w-auto portrait:mx-8 grid md:grid-cols-2 gap-4 md:gap-8">
           {projects.map((project, i) => {
             return (
               <li

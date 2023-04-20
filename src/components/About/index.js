@@ -6,7 +6,7 @@ const About = () => {
           <h1 className="text-5xl pb-4">
             About <span className="text-rose-800">me</span>
           </h1>
-          <div className="max-w-[700px] mx-auto pt-20 text-xl text-neutral-300">
+          <div className="max-w-[700px] mx-auto portrait:mx-8 pt-20 text-xl text-neutral-300">
             <p className="pb-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               👨‍💻 Currently I am 22 y/o, I'm currently a software engineer which

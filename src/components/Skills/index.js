@@ -10,7 +10,7 @@ const Skills = () => {
         <h1 className="text-5xl w-full">
           I can work <span className="text-rose-800">with</span>
         </h1>
-        <div className="pt-20">
+        <div className="pt-20 portrait:mx-8">
           <ul className="grid md:grid-cols-2 text-2xl gap-6">
             {skills.map((skill) => {
               return (
