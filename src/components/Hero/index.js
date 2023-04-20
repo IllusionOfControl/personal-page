@@ -9,13 +9,13 @@ const Hero = () => {
       className="w-full h-screen flex flex-col justify-center mx-auto bg-neutral-800"
       id="hero-section"
     >
-      <div className="max-w-[1240px] flex justify-between flex-wrap-reverse lg:flex-nowrap px-4 mx-auto sm:px-10 gap-4">
+      <div className="max-w-[1240px] flex justify-between flex-wrap-reverse md:flex-nowrap px-4 mx-auto sm:px-10 gap-4">
         <div className="m-auto">
-          <h2 className="text-3xl mb-2">Hi, my name is </h2>
-          <h1 className="font-bold text-4xl lg:text-5xl mb-2 text-rose-700">
+          <h2 className="text-3xl max-lg:text-2xl max-md:text-2xl mb-2">Hi, my name is </h2>
+          <h1 className="font-bold max-lg:text-4xl text-5xl mb-2 text-rose-700">
             Sergey Skorokhod
           </h1>
-          <p className="text-2xl font-light text-neutral-300 mb-6">
+          <p className="text-2xl max-lg:text-xl font-light text-neutral-300 mb-6">
             I&apos;m a self-taught software developer with a passion for
             building efficient applications with different technologies.
           </p>
@@ -26,7 +26,7 @@ const Hero = () => {
             📃 View my CV
           </Link>
         </div>
-        <div className="mx-auto w-[300px] xl:w-[500px] drop-shadow-2xl">
+        <div className="m-auto w-[400px] max-sm:w-[250px] max-lg:w-[300px] drop-shadow-2xl">
           <Image
             src="/avatar.jpg"
             width={400}
