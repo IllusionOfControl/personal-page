@@ -18,7 +18,7 @@ const projects = [
     title: "Personal page",
     stack: ["JavaScript", "Next.js", "JavaScript", "Tailwind"],
     description:
-      "A static website to present me & my projects. My first use of the Next.js framework",
+      "A static website to present me & my projects. My first use of the Next.js framework.",
     links: {
       github: "https://github.com/IllusionOfControl/personal-portfolio",
       demo: "https://illusion-of-control-portfolio.vercel.app/",
@@ -58,7 +58,7 @@ const projects = [
     stack: ["Algorithms", "Data Structures", "Computer Graphics", "Databases"],
     description:
       "The repository contains laboratory and practical work done at the university. " +
-      "Contains a variety of computer science examples",
+      "Contains a variety of computer science examples.",
     links: {
       github: "https://github.com/IllusionOfControl/bsuir-repo",
     },
@@ -123,9 +123,18 @@ const projects = [
     title: "Alien Invasion Game",
     stack: ["Python", "Pygame"],
     description:
-      "This is a simple alien invasion game written in Python and Pygame. ",
+      "This is a simple alien invasion game written in Python and Pygame.",
     links: {
       github: "https://github.com/IllusionOfControl/alien-invasion-game.git",
+    },
+  },
+  {
+    title: "schedule-bsuir-bot",
+    stack: ["Python", "Telegram"],
+    description:
+      "Personal project allows me to receive my schedule on demand. The project isn't relevant at the moment.",
+    links: {
+      github: "https://github.com/IllusionOfControl/schedule-bsuir-bot",
     },
   },
 ];
