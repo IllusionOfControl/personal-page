@@ -9,7 +9,7 @@ const Hero = () => {
       className="w-full h-screen flex flex-col justify-center mx-auto bg-neutral-800"
       id="hero-section"
     >
-      <div className="max-w-[1240px] flex justify-between flex-wrap-reverse md:flex-nowrap px-4 mx-auto sm:px-10 gap-4">
+      <div className="max-w-[1240px] flex justify-between portrait:flex-wrap-reverse flex-nowrap px-4 mx-auto sm:px-10 gap-8">
         <div className="m-auto">
           <h2 className="text-3xl max-lg:text-2xl max-md:text-2xl mb-2">Hi, my name is </h2>
           <h1 className="font-bold max-lg:text-4xl text-5xl mb-2 text-rose-700">
