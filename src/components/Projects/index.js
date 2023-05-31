@@ -4,16 +4,16 @@ import { projects } from "../../data";
 
 const Projects = () => {
   return (
-    <section className="bg-neutral-900" id="projects-section">
-      <div className="max-w-[1240px] px-4 mx-auto md:px-10 py-16 sm:py-28 gap-4">
-        <h1 className="text-5xl w-full">
+    <section className="bg-neutral-900 py-16 sm:py-28" id="projects-section">
+      <div className="max-w-[1240px] px-4 mx-auto md:px-10">
+        <h1 className="text-5xl">
           Featured <span className="text-rose-800">projects</span>
         </h1>
         <div className="pt-12 md:grid portrait:grid-cols-1 grid-cols-[2fr_4fr] pb-8">
           <div className="portrait:hidden max-h-[500px] text-[128px] text-rose-700 flex justify-center items-center">
             <FaGitAlt />
           </div>
-          <ul className="pt-20 w-auto portrait:mx-8 grid md:grid-cols-2 gap-4 md:gap-8">
+          <ul className="w-auto portrait:mx-8 grid md:grid-cols-2 gap-4 md:gap-8">
             {projects.map((project, i) => {
               return (
                 <li
@@ -66,7 +66,7 @@ const Projects = () => {
           </ul>
         </div>
 
-        <div className="mt-10 xl:mt-0 text-center sm:col-span-2">
+        <div className="text-center sm:col-span-2">
           <h3 className="text-3xl xl:text-3xl pb-6 font-mono">
             And many more...
           </h3>
