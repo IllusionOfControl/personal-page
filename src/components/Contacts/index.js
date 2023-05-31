@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
+  FaCommentDots
 } from "react-icons/fa";
 import Link from "next/link";
 import { socials, location } from "../../data";
@@ -12,12 +13,15 @@ import { socials, location } from "../../data";
 const Contacts = () => {
   return (
     <section className="bg-black py-16 sm:py-28" id="contacts-section">
-      <div className="px-4 mx-auto md:px-10">
-        <div className="max-w-[1240px] grid grid-cols-1 sm:grid-cols-[2fr_4fr] px-4 mx-auto md:px-10">
-          <h1 className="text-5xl pb-4">
-            Contact with <span className="text-rose-800">me</span>
-          </h1>
-          <div className="max-w-[700px] mx-auto pt-16 sm:pt-20 grid grid-cols-1 md:grid-cols-2 text-xl gap-4">
+      <div className="max-w-[1240px] px-4 mx-auto md:px-10">
+        <h1 className="text-5xl">
+          Contact with <span className="text-rose-800">me</span>
+        </h1>
+        <div className="pt-12 grid grid-cols-1 sm:grid-cols-[2fr_4fr]">
+          <div className="portrait:hidden text-[96px] text-rose-700 flex justify-center items-center">
+            <FaCommentDots />
+          </div>
+          <div className="portrait:mx-8 grid grid-cols-2 portrait:grid-cols-1 text-xl gap-4">
             <Link
               className="hover:text-rose-600 transition-colors"
               href={location.link}
