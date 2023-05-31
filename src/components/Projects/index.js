@@ -6,12 +6,10 @@ const Projects = () => {
   return (
     <section className="bg-neutral-900" id="projects-section">
       <div className="max-w-[1240px] px-4 mx-auto md:px-10 py-16 sm:py-28 gap-4">
-        <div>
-          <h1 className="text-5xl w-full">
-            Featured <span className="text-rose-800">projects</span>
-          </h1>
-        </div>
-        <div className="md:grid portrait:grid-cols-1 grid-cols-[2fr_4fr] pb-8">
+        <h1 className="text-5xl w-full">
+          Featured <span className="text-rose-800">projects</span>
+        </h1>
+        <div className="pt-12 md:grid portrait:grid-cols-1 grid-cols-[2fr_4fr] pb-8">
           <div className="portrait:hidden max-h-[500px] text-[128px] text-rose-700 flex justify-center items-center">
             <FaGitAlt />
           </div>
