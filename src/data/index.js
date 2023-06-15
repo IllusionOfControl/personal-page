@@ -137,6 +137,15 @@ const projects = [
       github: "https://github.com/IllusionOfControl/schedule-bsuir-bot",
     },
   },
+  {
+    title: "Musicbox",
+    stack: ["C/C++", "Microcontrollers/PIC"],
+    description:
+      "The Musicbox is a project created as part of an educational control work.",
+    links: {
+      github: "https://github.com/IllusionOfControl/musicbox",
+    },
+  },
 ];
 
 const location = {
