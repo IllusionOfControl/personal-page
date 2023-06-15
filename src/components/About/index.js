@@ -21,7 +21,7 @@ const About = () => {
             <p className="pb-4">
               🎓 I am getting a higher education at the Belarusian State
               University of Informatics and Radioelectronics (BSUIR) at the
-              Faculty of Computer Systems and netNetworks. Previously, he was
+              Faculty of Computer Systems and Networks. Previously, he was
               educated as a software engineer at a local college.
             </p>
             <p className="pb-4">
