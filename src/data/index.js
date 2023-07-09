@@ -146,6 +146,25 @@ const projects = [
       github: "https://github.com/IllusionOfControl/musicbox",
     },
   },
+  {
+    title: "Game of life",
+    stack: ["C++", "Windows API"],
+    description:
+      "This is a simple implementation of Conway's Game of Life using C++ and the Windows API. " +
+      "The Game of Life is a cellular automaton that simulates the evolution of cells based on a set of rules.",
+    links: {
+      github: "https://github.com/IllusionOfControl/game-of-life",
+    },
+  },
+  {
+    title: "Backend/Client Twitch Integration",
+    stack: ["Python", "FastAPI", "JavaScript", "React", "C++", "Unreal Engine 5", "WebSocket"],
+    description:
+      "Test Assignment for Backend/Client Twitch Integration.",
+    links: {
+      github: "https://github.com/IllusionOfControl/musicbox",
+    },
+  },
 ];
 
 const location = {
