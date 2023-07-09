@@ -6,7 +6,7 @@ import { cvPdfUrl } from "../../data";
 const Hero = () => {
   return (
     <section
-      className="w-full h-screen flex flex-col justify-center mx-auto bg-neutral-800"
+      className="w-full h-screen flex flex-col justify-center mx-auto bg-[url('/hero_pattern.svg')]"
       id="hero-section"
     >
       <div className="max-w-[1240px] flex justify-between portrait:flex-wrap-reverse flex-nowrap px-4 mx-auto sm:px-10 gap-8">

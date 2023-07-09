@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'>
+    <rect x='0' y='0' width='200%' height='200%' fill='hsla(0, 0%, 15%, 1)' transform='scale(6)'/>
+    <path d='M3.25 10h13.5M10 3.25v13.5' transform='translate(10,0) rotate(45)' stroke-linecap='square' stroke-width='2'
+          stroke='hsla(0, 0%, 20%, 1)' fill='none'/>
+</svg>
