@@ -15,7 +15,7 @@ const About = () => {
           <div className="max-w-[700px] mx-auto portrait:mx-8 text-xl text-neutral-300">
             <p className="pb-4">
               {/* eslint-disable-next-line react/no-unescaped-entities */}
-              👨‍💻 Currently I am 22 y/o, I'm currently a software engineer which
+              👨‍💻 Currently I am 23 y/o, I'm currently a software engineer which
               studying and doing pet projects.
             </p>
             <p className="pb-4">
