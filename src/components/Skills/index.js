@@ -1,40 +1,51 @@
 import { skills } from "../../data";
-import { FaCode } from "react-icons/fa";
+import NextJsIcon from "../../icons/nextjs";
+import React from "react";
+import PortfolioIcon from "../../icons";
 
 const Skills = () => {
   return (
-    <section className="bg-black bg-neutral-800 py-16 sm:py-28" id="skills-section">
-      <div className="max-w-[1240px] px-4 mx-auto md:px-10">
-        <h1 className="text-5xl">
-          I can work <span className="text-rose-800">with</span>
+    <section
+      className="container mx-auto border"
+      id="skills"
+    >
+        <h1 className="text-3xl">
+          <span className="text-neutral-300">I can work </span><span className="text-rose-700">with</span>
         </h1>
-        <div className="pt-12 md:grid portrait:grid-cols-1 grid-cols-[2fr_4fr]">
-          <div className="portrait:hidden text-[128px] max-h-[500px] text-rose-700 flex justify-center items-center">
-            <FaCode />
-          </div>
+        <hr className="border-neutral-800 border-1 my-4" />
+        <div className="">
           <div className="portrait:mx-8">
-            <ul className="grid md:grid-cols-2 text-2xl gap-6">
+            <ul className="">
               {skills.map((skill) => {
                 return (
                   <li
+                    className="py-4"
                     key={skill.name}
                     id={skill.name}
                   >
-                    <p className="text-4xl text-rose-400">
+                    <p className="text-2xl text-rose-500 opacity-50 pb-2">
                       {skill.name}
                     </p>
-                    <ul className="pl-4 pt-2">
-                      {skill.tools.map((tool) => (
-                        <li key={tool}>{tool}</li>
-                      ))}
+                    <ul className="grid grid-cols-4 gap-4">
+                    {skill.tools.map((tool) => (
+                        <li
+                          className="bg-neutral-900 p-4 rounded-lg flex items-center "
+                          key={tool.title}
+                        >
+                          <div className="p-2 items-center justify-center rounded-lg bg-neutral-800 ">
+                            <PortfolioIcon width={32} icon={tool.icon} />
+                          </div>
+                          <p className="pl-4 opacity-50">
+                            {tool.title}
+                          </p>
+                        </li>
+                    ))}
                     </ul>
                   </li>
-                );
-              })}
+              )})}
             </ul>
           </div>
         </div>
-      </div>
     </section>
   );
 };
