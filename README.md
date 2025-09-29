@@ -7,8 +7,8 @@ The website is designed to showcase personal information, projects, and skills. 
 ## Installation
 
 - Clone the repository.
-- Install dependencies using npm install.
-- Start the development server using npm run dev.
+- Install dependencies using `npm install`.
+- Start the development server using `npm run dev`.
 
 ## Usage
 
