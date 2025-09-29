@@ -37,5 +37,5 @@ const RedisIcon = (props) => (
     <path fill="#7A0C00" d="m93.3 27.7 17.2 6.8-17.2 6.8z" />
     <path fill="#AD2115" d="m74.3 35.3 19-7.6v13.6l-1.9.8z" />
   </svg>
-)
+);
 export default RedisIcon;

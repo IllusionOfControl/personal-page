@@ -2,12 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { cvPdfUrl } from "../../data";
 
-const Hero = ({hero}) => {
+const Hero = ({ hero }) => {
   return (
-    <section
-      className="container mx-auto py-14"
-      id="introduction"
-    >
+    <section className="container mx-auto py-14" id="introduction">
       <div className="flex justify-between portrait:flex-wrap-reverse flex-nowrap">
         <div className="my-auto w-3/5">
           <h2 className="text-2xl max-lg:text-2xl max-md:text-xl mb-2">

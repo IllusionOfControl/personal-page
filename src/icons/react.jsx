@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 
 const ReactIcon = (props) => (
   <svg
@@ -13,5 +13,5 @@ const ReactIcon = (props) => (
       <path d="M12.498 14.52c1.169 0 2.117-.927 2.117-2.072s-.948-2.073-2.117-2.073c-1.17 0-2.117.928-2.117 2.073s.947 2.073 2.117 2.073z" />
     </g>
   </svg>
-)
+);
 export default ReactIcon;

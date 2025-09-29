@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
-  FaCommentDots
+  FaCommentDots,
 } from "react-icons/fa";
 import Link from "next/link";
 import { socials, location } from "../../data";

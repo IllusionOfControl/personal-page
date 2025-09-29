@@ -3,7 +3,8 @@ const PyTestIcon = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     className="flex-shrink-0 h-5 w-5"
     viewBox="0 0 128 128"
-    {...props}>
+    {...props}
+  >
     <path
       fill="#696969"
       d="M31.512 30.398h61.304a3.006 3.006 0 0 1 0 6.012H31.512a3.007 3.007 0 0 1-3.004-3.004 3.008 3.008 0 0 1 3.004-3.008zm0 0"

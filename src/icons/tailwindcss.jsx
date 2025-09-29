@@ -1,4 +1,4 @@
-const TilewindCssIcon  = (props) => (
+const TilewindCssIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="flex-shrink-0 h-5 w-5"
@@ -26,5 +26,5 @@ const TilewindCssIcon  = (props) => (
       </linearGradient>
     </defs>
   </svg>
-)
+);
 export default TilewindCssIcon;

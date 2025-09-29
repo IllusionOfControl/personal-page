@@ -151,9 +151,16 @@ const projects = [
   },
   {
     title: "Backend/Client Twitch Integration",
-    stack: ["Python", "FastAPI", "JavaScript", "React", "C++", "Unreal Engine 5", "WebSocket"],
-    description:
-      "Test Assignment for Backend/Client Twitch Integration.",
+    stack: [
+      "Python",
+      "FastAPI",
+      "JavaScript",
+      "React",
+      "C++",
+      "Unreal Engine 5",
+      "WebSocket",
+    ],
+    description: "Test Assignment for Backend/Client Twitch Integration.",
     links: {
       github: "https://github.com/IllusionOfControl/musicbox",
     },

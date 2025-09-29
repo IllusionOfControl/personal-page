@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import { loadData } from "../utils/data-loader";
 import { skills } from "../data";
 
-export default function Home({hero, about, skills}) {
+export default function Home({ hero, about, skills }) {
   return (
     <>
       <Head>

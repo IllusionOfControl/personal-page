@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from "react";
 const MongoDbIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -103,5 +103,5 @@ const MongoDbIcon = (props) => (
       clipRule="evenodd"
     />
   </svg>
-)
+);
 export default MongoDbIcon;

@@ -14,7 +14,6 @@ import PostmanIcon from "./postman";
 import BashIcon from "./bash";
 import PyTestIcon from "./pytest";
 
-
 const mapIconWithComponent = {
   react: ReactIcon,
   redux: ReduxIcon,
@@ -31,10 +30,10 @@ const mapIconWithComponent = {
   postman: PostmanIcon,
   bash: BashIcon,
   pytest: PyTestIcon,
-}
+};
 
-const PortfolioIcon = ({icon}) => {
-  const iconComponent = mapIconWithComponent[icon]
+const PortfolioIcon = ({ icon }) => {
+  const iconComponent = mapIconWithComponent[icon];
 
   if (!iconComponent) {
     console.warn(`Icon component for "${icon}" not found.`);
@@ -42,6 +41,6 @@ const PortfolioIcon = ({icon}) => {
   }
 
   return iconComponent();
-}
+};
 
 export default PortfolioIcon;

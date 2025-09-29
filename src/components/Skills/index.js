@@ -2,7 +2,7 @@ import { skills } from "../../data";
 import React from "react";
 import PortfolioIcon from "../../icons";
 
-const Skills = ({skills}) => {
+const Skills = ({ skills }) => {
   return (
     <section className="container mx-auto" id="skills">
       <h1 className="text-3xl">
