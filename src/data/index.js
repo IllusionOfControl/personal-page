@@ -1,13 +1,6 @@
 const skills = [
-  {
-    name: "Python",
-    tools: ["FastAPI", "Django/DRF", "Flask", "OpenCV", "Celery"],
-  },
-  { name: "JavaScript", tools: ["React", "Next.js", "Redux"] },
-  { name: "C/C++", tools: ["SFML", "OpenGL", "STL 11"] },
-  { name: "Java", tools: ["Core", "Spring Boot", "Android"] },
-  { name: "Tools", tools: ["Shell", "Docker", "Postman", "Git", "WebRTC"] },
-  { name: "Databases", tools: ["PostgreSQL", "SQLite", "Redis"] },
+  // { name: "C/C++", tools: ["SFML", "OpenGL", "STL 11"] },
+  // { name: "Java", tools: ["Core", "Spring Boot", "Android"] },
 ];
 
 const cvPdfUrl =

@@ -1,0 +1,45 @@
+hero:
+  name: Sergey Skorokhod
+  description: |
+    Passionate developer with a knack for solving complex problems through code. 
+    Mostly self-taught and driven by an unyielding curiosity to explore and master new technologies.
+
+skills:
+  - name: Python
+    tools:
+      - title: FastAPI
+        icon: fastapi
+      - title: Flask
+        icon: flask
+      - title: Django
+        icon: django
+      - title: PyTest
+        icon: pytest
+  - name: JavaScript
+    tools:
+      - title: React
+        icon: react
+      - title: Next.js
+        icon: nextjs
+      - title: Tailwind CSS
+        icon: tailwindcss
+      - title: Redux
+        icon: redux
+  - name: Databases
+    tools:
+      - title: MongoDB
+        icon: mongodb
+      - title: PostgreSQL
+        icon: postgresql
+      - title: Redis
+        icon: redis
+  - name: Tools
+    tools:
+      - title: Shell
+        icon: bash
+      - title: Docker
+        icon: docker
+      - title: Git
+        icon: git
+      - title: Postman
+        icon: postman
