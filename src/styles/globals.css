@@ -28,9 +28,9 @@
       max-width: 800px;
     }
   }
-  @media (min-width: 1150px) {
+  @media (min-width: 1000px) {
     .container {
-      max-width: 1150px;
+      max-width: 1000px;
     }
   }
 }

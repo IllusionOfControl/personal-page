@@ -2,9 +2,8 @@ import Head from "next/head";
 import { Hero, About, Skills, Projects, Contacts, Footer } from "../components";
 import Navbar from "../components/Navbar";
 import { loadData } from "../utils/data-loader";
-import { skills } from "../data";
 
-export default function Home({ hero, about, skills }) {
+export default function Home({ hero, skills, contacts, socials, location }) {
   return (
     <>
       <Head>
@@ -18,7 +17,7 @@ export default function Home({ hero, about, skills }) {
         {/*<About about={about} />*/}
         <Skills skills={skills} />
         {/*<Projects />*/}
-        {/*<Contacts />*/}
+        <Contacts contacts={contacts} socials={socials} location={location} />
       </main>
       <Footer />
     </>
@@ -30,12 +29,13 @@ export async function getStaticProps() {
 
   return {
     props: {
-      hero: data.hero ?? null,
-      about: data.about ?? null,
-      skills: data.skills ?? null,
+      hero: data.hero,
+      skills: data.skills,
+      contacts: data.contacts,
+      location: data.location,
+      socials: data.socials,
       // projects: data.projects,
-      // socials: data.socials,
-      // location: data.location,
+      // about: data.about,
       // cvPdfUrl: data.cvPdfUrl,
     },
   };

@@ -12,28 +12,28 @@ const NavBar = () => {
           <Link
             href={"#about-section"}
             scroll={false}
-            className="sm:text-2xl hover:text-rose-800"
+            className="sm:text-xl hover:text-rose-800"
           >
             About
           </Link>
           <Link
             href={"#skills-section"}
             scroll={false}
-            className="sm:text-2xl hover:text-rose-600"
+            className="sm:text-xl hover:text-rose-600"
           >
             Skills
           </Link>
           <Link
             href={"#projects-section"}
             scroll={false}
-            className="sm:text-2xl hover:text-rose-600"
+            className="sm:text-xl hover:text-rose-600"
           >
             Projects
           </Link>
           <Link
             href={"#contacts-section"}
             scroll={false}
-            className="sm:text-2xl hover:text-rose-600"
+            className="sm:text-xl hover:text-rose-600"
           >
             Contacts
           </Link>

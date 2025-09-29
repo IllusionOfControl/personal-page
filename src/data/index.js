@@ -167,22 +167,4 @@ const projects = [
   },
 ];
 
-const location = {
-  title: "Belarus, Brest",
-  link: "https://goo.gl/maps/BAi5Zq9nxcWkNVpi9",
-};
-
-const socials = {
-  email: "sergeyskorokhod2@gmail.com",
-  email_link: "mailto:sergeyskorokhod2@gmail.com",
-  telegram: "@illusion_of_control",
-  telegram_link: "https://t.me/illusion_of_control",
-  instagram: "@illus1on_of_control",
-  instagram_link: "https://instagram.com/illus1on_of_control",
-  github: "IllusionOfControl",
-  github_link: "https://github.com/IllusionOfControl",
-  linkedin: "Sergey Skorokhod",
-  linkedin_link: "https://www.linkedin.com/in/skorokhod-sergey/",
-};
-
-export { skills, projects, socials, location, cvPdfUrl };
+export { skills, projects, cvPdfUrl };

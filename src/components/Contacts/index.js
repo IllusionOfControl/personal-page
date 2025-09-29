@@ -5,23 +5,22 @@ import {
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
-  FaCommentDots,
+  FaPhone,
 } from "react-icons/fa";
 import Link from "next/link";
-import { socials, location } from "../../data";
+import React from "react";
 
-const Contacts = () => {
+const Contacts = ({ location, contacts, socials }) => {
   return (
-    <section className="bg-black py-16 sm:py-28" id="contacts-section">
-      <div className="max-w-[1240px] px-4 mx-auto md:px-10">
-        <h1 className="text-5xl">
-          Contact with <span className="text-rose-800">me</span>
-        </h1>
-        <div className="pt-12 grid grid-cols-1 sm:grid-cols-[2fr_4fr]">
-          <div className="portrait:hidden text-[96px] text-rose-700 flex justify-center items-center">
-            <FaCommentDots />
-          </div>
-          <div className="portrait:mx-8 grid grid-cols-2 portrait:grid-cols-1 text-xl gap-4">
+    <section className="mx-auto container py-8" id="contacts-section">
+      <h1 className="text-3xl">
+        <span className="text-neutral-300">Contact with </span>
+        <span className="text-rose-800">me</span>
+      </h1>
+      <hr className="border-neutral-800 border-1 my-4" />
+      <div className="mx-auto">
+        <div className="flex justify-between text-neutral-400">
+          <div className="my-auto flex flex-col space-y-4">
             <Link
               className="hover:text-rose-600 transition-colors"
               href={location.link}
@@ -31,11 +30,19 @@ const Contacts = () => {
             </Link>
             <Link
               className="hover:text-rose-600 transition-colors"
-              href={socials.email_link}
+              href={"mailto:" + contacts.email}
             >
               <FaEnvelope className="inline mr-2" />
-              {socials.email}
+              {contacts.email}
             </Link>
+            <Link
+              className="hover:text-rose-600 transition-colors"
+              href={"tel:+" + contacts.phone}
+            >
+              <FaPhone className="inline mr-2" />+{contacts.phone}
+            </Link>
+          </div>
+          <div className="my-auto flex flex-col space-y-4">
             <Link
               className="hover:text-rose-600 transition-colors"
               href={socials.telegram_link}
