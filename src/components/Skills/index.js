@@ -22,13 +22,13 @@ const Skills = ({ skills }) => {
                   <ul className="grid grid-cols-4 gap-4">
                     {skill.tools.map((tool) => (
                       <li
-                        className="bg-neutral-900 p-2 rounded-lg flex items-center border border-neutral-900 hover:border hover:border-rose-900 dark:bg-neutral-900"
+                        className="bg-neutral-900 p-2 rounded-lg flex items-center border border-neutral-900 hover:border hover:border-rose-900 dark:bg-neutral-900 transition-colors"
                         key={tool.title}
                       >
                         <div className="p-2 items-center justify-center rounded-lg bg-neutral-800 ">
                           <PortfolioIcon width={32} icon={tool.icon} />
                         </div>
-                        <p className="pl-4 opacity-70">{tool.title}</p>
+                        <p className="pl-4 opacity-70 select-none">{tool.title}</p>
                       </li>
                     ))}
                   </ul>

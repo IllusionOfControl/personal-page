@@ -1,5 +1,3 @@
-import CopyrightIcon from "../../icons/copyright";
-
 const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-neutral-800 text-center py-4 opacity-70 bg-black">
