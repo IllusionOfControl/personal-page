@@ -3,6 +3,13 @@ hero:
   description: |
     Passionate developer with a knack for solving complex problems through code. 
     Mostly self-taught and driven by an unyielding curiosity to explore and master new technologies.
+  cv_url: "https://drive.google.com/file/d/17oqcjAg94V_Kgj7geIr3CN2pF_QDLGsr/view?usp=share_link"
+
+about:
+  paragraphs:
+    - "👨‍💻 Currently I am 23 y/o, I'm currently a software engineer which studying and doing pet projects."
+    - "🎓 I am getting a higher education at the Belarusian State University of Informatics and Radioelectronics (BSUIR) at the Faculty of Computer Systems and Networks. Previously, he was educated as a software engineer at a local college."
+    - "🏓 I have hobbies such as watching 📺 TV series and anime, 🚴‍♀️ cycling, 🏐 playing volleyball. I am also fond of system administration and 🧪 experiments. I have little experience in reverse engineering. Familiar with the basics of electrical engineering."
 
 skills:
   - name: Python
@@ -44,12 +51,56 @@ skills:
       - title: Postman
         icon: postman
 
+projects:
+  - title: "Personal page"
+    stack: ["JavaScript", "Next.js", "Tailwind"]
+    description: "A static website to present me & my projects. My first use of the Next.js framework."
+    links:
+      github: "https://github.com/IllusionOfControl/personal-portfolio"
+      demo: "https://illusion-of-control-portfolio.vercel.app/"
+  - title: "React projects"
+    stack: ["JavaScript", "React", "Tailwind", "Redux"]
+    description: "A wide variety of small projects using React."
+    links:
+      github: "https://github.com/IllusionOfControl/react-projects"
+  - title: "Todoist clone"
+    stack: ["JavaScript", "Python", "React", "PostgreSQL", "FastAPI"]
+    description: "Todoist is a web service and a set of task management software. This project implements a copy of it."
+    links:
+      github: "https://github.com/IllusionOfControl/todoist-clone"
+  - title: "USB Computer Status Display"
+    stack: ["C#", "C", "Microcontrollers/PIC", "USB"]
+    description: "The device displays system information about the status of the computer: CPU, Ram, Disk, Network load, uptime, world datetime. For Windows system only!"
+    links:
+      github: "https://github.com/IllusionOfControl/UCSD-PIC-Source"
+  - title: "BSUIR repo"
+    stack: ["Algorithms", "Data Structures", "Computer Graphics", "Databases"]
+    description: "The repository contains laboratory and practical work done at the university. Contains a variety of computer science examples."
+    links:
+      github: "https://github.com/IllusionOfControl/bsuir-repo"
+  - title: "Candle"
+    stack: ["Python", "Django", "DRF", "Bootstrap", "Unittest"]
+    description: "An educational project that allows you to catalog books by author, book series, publisher and tags. Allows you to search."
+    links:
+      github: "https://github.com/IllusionOfControl/candle"
+  - title: "Pixie"
+    stack: ["Golang", "Telegram"]
+    description: "This is a Golang Telegram bot that can pixelize images using OpenCV."
+    links:
+      github: "https://github.com/IllusionOfControl/pixie"
+  - title: "Octoprofile"
+    stack: ["JavaScript", "Next.js", "Github API"]
+    description: "A nicer look at your personal GitHub Profile with charts!"
+    links:
+      github: "https://github.com/IllusionOfControl/octoprofile"
+      demo: "https://octoprofile-six.vercel.app/"
+
 location:
   title: "Belarus, Brest"
   link: "https://goo.gl/maps/BAi5Zq9nxcWkNVpi9"
 
 contacts:
-  phone: 3752092078386
+  phone: "3752092078386"
   email: "sergeyskorokhod2@gmail.com"
 
 socials:

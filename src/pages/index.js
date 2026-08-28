@@ -29,14 +29,13 @@ export async function getStaticProps() {
 
   return {
     props: {
-      hero: data.hero,
-      skills: data.skills,
-      contacts: data.contacts,
-      location: data.location,
-      socials: data.socials,
-      // projects: data.projects,
-      // about: data.about,
-      // cvPdfUrl: data.cvPdfUrl,
+      hero: data.hero || null,
+      about: data.about || null,
+      skills: data.skills || [],
+      projects: data.projects || [],
+      contacts: data.contacts || {},
+      location: data.location || {},
+      socials: data.socials || {},
     },
   };
 }

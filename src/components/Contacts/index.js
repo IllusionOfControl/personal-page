@@ -12,7 +12,7 @@ import React from "react";
 
 const Contacts = ({ location, contacts, socials }) => {
   return (
-    <section className="mx-auto container py-8" id="contacts-section">
+    <section className="mx-auto container py-12 scroll-mt-24" id="contacts">
       <h1 className="text-3xl">
         <span className="text-neutral-300">Contact with </span>
         <span className="text-rose-800">me</span>

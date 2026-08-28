@@ -1,10 +1,9 @@
-import { skills } from "../../data";
 import React from "react";
 import PortfolioIcon from "../../icons";
 
 const Skills = ({ skills }) => {
   return (
-    <section className="container mx-auto" id="skills">
+    <section className="container mx-auto py-10 scroll-mt-24" id="skills">
       <h1 className="text-3xl">
         <span className="text-neutral-300">I can work </span>
         <span className="text-rose-700">with</span>
