@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { Navbar, Footer } from "@/components";
 import { loadData } from "@/utils/data-loader";
-import { getDictionary } from "@/locales";
 import { NowData } from "@/types";
 
 interface NowPageProps {
@@ -20,7 +19,6 @@ interface NowPageProps {
 
 export default function NowPage({ now, locale }: NowPageProps) {
   if (!now) return null;
-  const dict = getDictionary(locale);
   const isRu = locale === "ru";
   const title = isRu
     ? `${now.title || "Сейчас"} | Сергей Скороход`
