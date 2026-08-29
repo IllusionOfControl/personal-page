@@ -33,7 +33,6 @@ const NavBar: React.FC = () => {
     { label: dict.nav.now, href: "/now", icon: FaClock },
   ];
 
-
   return (
     <>
       {/* Mobile Top Header (Logo + Language & Theme controls) */}
