@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const navLinks = [
   { label: "About", href: "/" },
   { label: "Projects", href: "/projects" },
+  { label: "Articles", href: "/articles" },
   { label: "Uses", href: "/uses" },
   { label: "Now", href: "/now" },
 ];
@@ -25,12 +25,16 @@ const NavBar = () => {
         </Link>
         <div className="flex items-center gap-0.5 sm:gap-1">
           {navLinks.map((item) => {
-            const isActive = currentPath === item.href;
+            const isActive =
+              item.href === "/"
+                ? currentPath === "/"
+                : currentPath === item.href || currentPath.startsWith(`${item.href}/`);
+
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 ${
+                className={`px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 ${
                   isActive
                     ? "bg-neutral-800 text-white shadow-sm font-semibold"
                     : "text-neutral-400 hover:text-neutral-200 hover:bg-neutral-900/70"

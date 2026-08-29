@@ -21,7 +21,6 @@ import {
   SiCelery,
   SiRabbitmq,
   SiClickhouse,
-  SiQdrant,
   SiSqlite,
   SiLangchain,
   SiPytorch,
@@ -38,7 +37,7 @@ import {
   SiApachekafka,
 } from "react-icons/si";
 
-import { FaAws, FaBrain, FaRobot, FaServer } from "react-icons/fa6";
+import { FaAws, FaBrain, FaRobot, FaServer, FaVectorSquare } from "react-icons/fa6";
 
 const mapIconWithComponent = {
   // Local JSX icons
@@ -67,7 +66,7 @@ const mapIconWithComponent = {
   rabbitmq: (props) => <SiRabbitmq className="text-orange-500" size={props.width || 24} {...props} />,
   kafka: (props) => <SiApachekafka className="text-red-500" size={props.width || 24} {...props} />,
   clickhouse: (props) => <SiClickhouse className="text-yellow-400" size={props.width || 24} {...props} />,
-  qdrant: (props) => <SiQdrant className="text-rose-500" size={props.width || 24} {...props} />,
+  qdrant: (props) => <FaVectorSquare className="text-rose-500" size={props.width || 24} {...props} />,
   minio: (props) => <SiMinio className="text-pink-500" size={props.width || 24} {...props} />,
   sqlite: (props) => <SiSqlite className="text-sky-400" size={props.width || 24} {...props} />,
   langchain: (props) => <SiLangchain className="text-emerald-400" size={props.width || 24} {...props} />,
