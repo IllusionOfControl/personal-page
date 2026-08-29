@@ -1,0 +1,257 @@
+hero:
+  name: Сергей Скороход
+  role: "Python Backend Developer (Middle+/Senior) | Full Stack Developer"
+  description: |
+    Python бэкенд-разработчик, специализирующийся на создании быстрых и масштабируемых асинхронных приложений на FastAPI.
+    Опыт в разработке AI/LLM-решений, ETL-пайплайнов на Apache Airflow, высоконагруженных микросервисов и интеграций с CRM и платежными системами.
+  cv_url: "https://drive.google.com/file/d/17oqcjAg94V_Kgj7geIr3CN2pF_QDLGsr/view?usp=share_link"
+
+about:
+  paragraphs:
+    - "Python Backend разработчик, сфокусированный на проектировании быстрых и масштабируемых асинхронных сервисов на FastAPI. Создавал игровые API, интеграции и AI-решения для автоматизации бизнес-процессов."
+    - "Имею опыт проектирования архитектур на Event Sourcing, работы с векторными базами данных (Qdrant), LLM фреймворками (LangChain, Ollama) и построения сложных ETL-пайплайнов на Apache Airflow."
+    - "🎓 Высшее образование: БГУИР, Факультет компьютерных систем и сетей, специальность «Программное обеспечение информационных технологий»."
+
+skills:
+  - name: Backend и фреймворки
+    tools:
+      - title: Python
+        icon: python
+      - title: FastAPI
+        icon: fastapi
+      - title: Django / DRF
+        icon: django
+      - title: Apache Airflow
+        icon: airflow
+      - title: Apache Kafka
+        icon: kafka
+      - title: Celery / RabbitMQ
+        icon: celery
+
+  - name: Базы данных и хранилища
+    tools:
+      - title: PostgreSQL
+        icon: postgresql
+      - title: Redis
+        icon: redis
+      - title: MongoDB
+        icon: mongodb
+      - title: ClickHouse
+        icon: clickhouse
+      - title: Qdrant (Vector DB)
+        icon: qdrant
+      - title: MinIO / S3
+        icon: minio
+      - title: SQLite
+        icon: sqlite
+
+  - name: AI, ML и автоматизация
+    tools:
+      - title: LangChain / RAG
+        icon: langchain
+      - title: Ollama / Local LLM
+        icon: ollama
+      - title: PyTorch
+        icon: pytorch
+      - title: TensorFlow
+        icon: tensorflow
+      - title: LLM & OpenAI
+        icon: llm
+      - title: OCR & Vision
+        icon: ai
+
+  - name: Cloud, DevOps и архитектура
+    tools:
+      - title: Docker
+        icon: docker
+      - title: Kubernetes
+        icon: kubernetes
+      - title: AWS
+        icon: aws
+      - title: CI/CD & Microservices
+        icon: server
+
+  - name: Языки программирования
+    tools:
+      - title: Python
+        icon: python
+      - title: Golang
+        icon: golang
+      - title: C++
+        icon: cplusplus
+      - title: Rust
+        icon: rust
+      - title: Node.js
+        icon: nodejs
+      - title: TypeScript
+        icon: typescript
+
+  - name: Frontend и инструменты
+    tools:
+      - title: React
+        icon: react
+      - title: Redux
+        icon: redux
+      - title: Next.js
+        icon: nextjs
+      - title: Tailwind CSS
+        icon: tailwindcss
+      - title: Git
+        icon: git
+      - title: PyTest
+        icon: pytest
+      - title: Postman
+        icon: postman
+      - title: Shell / Bash
+        icon: bash
+
+projects:
+  - title: "Personal page"
+    stack: ["JavaScript", "Next.js", "Tailwind CSS"]
+    description: "Статический сайт-портфолио для презентации проектов, инструментов, блога и текущего фокуса."
+    links:
+      github: "https://github.com/IllusionOfControl/personal-portfolio"
+      demo: "https://illusion-of-control-portfolio.vercel.app/"
+  - title: "React projects"
+    stack: ["JavaScript", "React", "Tailwind CSS", "Redux"]
+    description: "Разнообразные модульные веб-приложения и интерфейсы, разработанные на экосистеме React."
+    links:
+      github: "https://github.com/IllusionOfControl/react-projects"
+  - title: "Todoist clone"
+    stack: ["Python", "FastAPI", "PostgreSQL", "React", "Docker"]
+    description: "Сервис управления задачами по мотивам Todoist с асинхронным бэкендом и обновлением в реальном времени."
+    links:
+      github: "https://github.com/IllusionOfControl/todoist-clone"
+  - title: "USB Computer Status Display"
+    stack: ["C#", "C", "Microcontrollers/PIC", "USB"]
+    description: "Аппаратно-программный комплекс отображения загрузки CPU, RAM, диска, сети, аптайма и времени."
+    links:
+      github: "https://github.com/IllusionOfControl/UCSD-PIC-Source"
+  - title: "BSUIR Computer Science Repo"
+    stack:
+      ["C++", "Algorithms", "Data Structures", "Computer Graphics", "Databases"]
+    description: "Обширный репозиторий лабораторных и практических работ по Computer Science в университете."
+    links:
+      github: "https://github.com/IllusionOfControl/bsuir-repo"
+  - title: "Candle Bookstore & Catalog"
+    stack: ["Python", "Django", "DRF", "Bootstrap", "Unittest"]
+    description: "Проект каталогизации книг по авторам, сериям, издательствам и тегам с быстрым поиском."
+    links:
+      github: "https://github.com/IllusionOfControl/candle"
+  - title: "Pixie Image Processing Bot"
+    stack: ["Golang", "Telegram Bot API", "OpenCV / gocv"]
+    description: "Высокопроизводительный Telegram-бот для пикселизации и обработки изображений через пайплайны OpenCV."
+    links:
+      github: "https://github.com/IllusionOfControl/pixie"
+  - title: "Octoprofile"
+    stack: ["JavaScript", "Next.js", "GitHub API", "Chart.js"]
+    description: "Интерактивная панель визуализации и аналитики личного GitHub профиля с графиками активности."
+    links:
+      github: "https://github.com/IllusionOfControl/octoprofile"
+      demo: "https://octoprofile-six.vercel.app/"
+
+uses:
+  title: "Оборудование и софт"
+  description: "Инструменты, гаджеты и программное обеспечение, которые я использую каждый день."
+  note:
+  sections:
+    - title: "Сетап"
+      subsections:
+        - title: "Компьютер"
+          items:
+            - "Asus TUF FA507UV"
+            - "Процессор: AMD Ryzen 7 8845H"
+            - "Оперативная память: 16GB"
+        - title: "Периферия"
+          items:
+            - "Клавиатура: Royal Kludge RK87 Brown"
+            - "Мышь: Logitech G102 Lightsync"
+            - "Микрофон: Fifine AM8"
+        - title: "Смартфон"
+          items:
+            - "iPhone 15 Pro"
+    - title: "Программы"
+      subsections:
+        - title: "Разработка"
+          items:
+            - "Visual Studio Code"
+            - "Zed"
+            - "JetBrains IDEs"
+            - "Postman"
+            - "Docker Desktop"
+        - title: "Продуктивность"
+          items:
+            - "Obsidian"
+            - "Календарь: Google Calendar"
+            - "Discord"
+
+now:
+  title: "Сейчас"
+  description: "Поскольку я не веду социальные сети активно, это мой способ делиться тем, над чем я сейчас работаю."
+  last_updated: "Обновлено в августе 2026."
+  sections:
+    - title: "Текущий фокус"
+      type: "focus"
+      subsections:
+        - title: "Повседневная работа"
+          items:
+            - title: "Home Lab Development"
+              desc: "Занимаюсь развитием домашней лаборатории (Proxmox, Docker, self-hosted сервисы), чтобы полностью контролировать свои данные, окружение и инфраструктуру пет-проектов."
+            - title: "Web Applications"
+              desc: "Разработка личных веб-приложений и масштабируемых сервисов с современным асинхронным бэкендом и удобным интерфейсом."
+        - title: "Личное развитие"
+          items:
+            - title: "Conversational English"
+              desc: "Изучение разговорного английского языка. Активно улучшаю разговорный английский, чтобы расширить возможности делиться опытом, вести нетворкинг и свободно общаться в международном комьюнити."
+
+    - title: "Обучение"
+      type: "learning"
+      subsections:
+        - title: "Языки и фреймворки"
+          items:
+            - title: "Экосистема Rust и Go"
+              desc: "Углубление в Rust и Go для создания высоконагруженных микросервисов, распределенных систем и эффективных системных утилит с максимальной производительностью и параллелизмом."
+            - title: "AI-агенты и Machine Learning"
+              desc: "Исследование архитектур автономных AI-агентов (LangChain, LangGraph, Ollama, Qdrant), интеграция локальных LLM и практические ML-пайплайны для автоматизации сложных бизнес-процессов."
+
+    - title: "Open Source и GitHub"
+      type: "github"
+      subsections:
+        - title: "Публичные проекты и репозитории"
+          items:
+            - title: "Активная Open Source разработка"
+              desc: "Регулярно выкладываю проекты, ботов и эксперименты на GitHub. Поддерживаю чистую архитектуру и делюсь кодом с сообществом разработчиков."
+            - title: "Эксперименты и Best Practices"
+              desc: "Тестирую новые фреймворки, бенчмаркаю библиотеки и применяю современные практики построения надежных сервисов."
+
+    - title: "Игры и хобби"
+      type: "playing"
+      subsections:
+        - title: "Во что играю"
+          items:
+            - title: "Assetto Corsa Competizione"
+              desc: "Обожаю симрейсинг — отличный способ отточить концентрацию, тайминги, хладнокровие и почувствовать поведение спортивного автомобиля на реальных треках."
+            - title: "Factorio"
+              desc: "Проектирование и оптимизация сложных автоматизированных производственных конвейеров. Идеальный тренажер для инженерного и системного мышления."
+            - title: "Minecraft"
+              desc: "Уютный мир для креатива, экспериментов с редстоуном, сложными механизмами и автоматизацией ферм."
+            - title: "Dota 2"
+              desc: "Соревновательный командный дух, тактика, микроконтроль и быстрая реакция в динамичных матчах."
+
+location:
+  title: "Беларусь / Польша"
+  link: "https://goo.gl/maps/BAi5Zq9nxcWkNVpi9"
+
+contacts:
+  phone: "+375255002929"
+  email: "sergeyskorokhod2@gmail.com"
+
+socials:
+  telegram: "@illusion_of_control"
+  telegram_link: "https://t.me/illusion_of_control"
+  instagram: "@illus1on_of_control"
+  instagram_link: "https://instagram.com/illus1on_of_control"
+  github: "IllusionOfControl"
+  github_link: "https://github.com/IllusionOfControl"
+  linkedin: "Сергей Скороход"
+  linkedin_link: "https://www.linkedin.com/in/skorokhod-sergey/"
