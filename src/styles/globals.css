@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
 
   body {
-    @apply text-neutral-300 bg-neutral-950;
+    @apply text-neutral-800 bg-neutral-50 dark:text-neutral-300 dark:bg-neutral-950 transition-colors duration-200;
+    background-color: #fafafa;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  html.dark body {
     background-color: #0a0a0a;
     background-image:
       linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
