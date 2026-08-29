@@ -34,8 +34,9 @@ const Hero = ({ hero }) => {
             src="/avatar.jpg"
             width={200}
             height={200}
-            alt="me"
-            className="rounded-full border-red-700 border-2"
+            alt={hero.name}
+            priority
+            className="rounded-full border-rose-700 border-2"
           />
         </div>
       </div>
