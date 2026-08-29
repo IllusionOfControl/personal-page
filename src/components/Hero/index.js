@@ -6,12 +6,17 @@ const Hero = ({ hero }) => {
     <section className="container mx-auto pt-28 pb-14" id="about">
       <div className="flex justify-between portrait:flex-wrap-reverse flex-nowrap">
         <div className="my-auto w-3/5">
-          <h2 className="text-2xl max-lg:text-2xl max-md:text-xl mb-2">
+          <h2 className="text-2xl max-lg:text-2xl max-md:text-xl mb-1">
             Hi 👋, my name is
-            <span className="text-2xl max-lg:text-4xl  mb-2 text-rose-700 ml-2">
+            <span className="text-2xl max-lg:text-4xl text-rose-700 ml-2 font-semibold">
               {hero.name}
             </span>
           </h2>
+          {hero?.role && (
+            <p className="text-sm md:text-base font-mono text-rose-400/90 mb-4">
+              {hero.role}
+            </p>
+          )}
           <p className="text-xl max-lg:text-xl font-light text-neutral-300 mb-8">
             {hero.description}
           </p>

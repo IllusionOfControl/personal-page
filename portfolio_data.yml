@@ -1,55 +1,109 @@
 hero:
   name: Sergey Skorokhod
+  role: "Python Backend Developer (Middle+/Senior) | Full Stack Developer"
   description: |
-    Passionate developer with a knack for solving complex problems through code. 
-    Mostly self-taught and driven by an unyielding curiosity to explore and master new technologies.
+    Passionate Python Backend Developer focused on building fast and scalable asynchronous applications with FastAPI. 
+    Experienced in AI/LLM solutions, ETL workflows with Apache Airflow, high-load microservices, and complex CRM/payment integrations.
   cv_url: "https://drive.google.com/file/d/17oqcjAg94V_Kgj7geIr3CN2pF_QDLGsr/view?usp=share_link"
 
 about:
   paragraphs:
-    - "👨‍💻 Currently I am 23 y/o, I'm currently a software engineer which studying and doing pet projects."
-    - "🎓 I am getting a higher education at the Belarusian State University of Informatics and Radioelectronics (BSUIR) at the Faculty of Computer Systems and Networks. Previously, he was educated as a software engineer at a local college."
-    - "🏓 I have hobbies such as watching 📺 TV series and anime, 🚴‍♀️ cycling, 🏐 playing volleyball. I am also fond of system administration and 🧪 experiments. I have little experience in reverse engineering. Familiar with the basics of electrical engineering."
+    - "Python Backend Developer focused on building fast and scalable asynchronous applications with FastAPI. Successfully built complex asynchronous services, APIs for gaming projects, and AI solutions for business process automation."
+    - "Experienced in designing and implementing complex integrations with CRM and payment systems, as well as building chatbots using LLMs (LangChain, Ollama, Qdrant). Built complex ETL workflows using Apache Airflow."
+    - "🎓 Bachelor's degree in Information Technology and Software Engineering from Belarusian State University of Informatics and Radioelectronics (BSUIR)."
 
 skills:
-  - name: Python
+  - name: Backend & Frameworks
     tools:
+      - title: Python
+        icon: python
       - title: FastAPI
         icon: fastapi
-      - title: Flask
-        icon: flask
-      - title: Django
+      - title: Django / DRF
         icon: django
-      - title: PyTest
-        icon: pytest
-  - name: JavaScript
+      - title: Apache Airflow
+        icon: airflow
+      - title: Apache Kafka
+        icon: kafka
+      - title: Celery / RabbitMQ
+        icon: celery
+
+  - name: Databases & Storage
     tools:
-      - title: React
-        icon: react
-      - title: Next.js
-        icon: nextjs
-      - title: Tailwind CSS
-        icon: tailwindcss
-      - title: Redux
-        icon: redux
-  - name: Databases
-    tools:
-      - title: MongoDB
-        icon: mongodb
       - title: PostgreSQL
         icon: postgresql
       - title: Redis
         icon: redis
-  - name: Tools
+      - title: MongoDB
+        icon: mongodb
+      - title: ClickHouse
+        icon: clickhouse
+      - title: Qdrant (Vector DB)
+        icon: qdrant
+      - title: MinIO / S3
+        icon: minio
+      - title: SQLite
+        icon: sqlite
+
+  - name: AI, ML & Automation
     tools:
-      - title: Shell
-        icon: bash
+      - title: LangChain / RAG
+        icon: langchain
+      - title: Ollama / Local LLM
+        icon: ollama
+      - title: PyTorch
+        icon: pytorch
+      - title: TensorFlow
+        icon: tensorflow
+      - title: LLM & OpenAI
+        icon: llm
+      - title: OCR & Vision
+        icon: ai
+
+  - name: Cloud, DevOps & Architecture
+    tools:
       - title: Docker
         icon: docker
+      - title: Kubernetes
+        icon: kubernetes
+      - title: AWS
+        icon: aws
+      - title: CI/CD & Microservices
+        icon: server
+
+  - name: Languages
+    tools:
+      - title: Python
+        icon: python
+      - title: Golang
+        icon: golang
+      - title: C++
+        icon: cplusplus
+      - title: Rust
+        icon: rust
+      - title: Node.js
+        icon: nodejs
+      - title: TypeScript
+        icon: typescript
+
+  - name: Frontend & Tools
+    tools:
+      - title: React
+        icon: react
+      - title: Redux
+        icon: redux
+      - title: Next.js
+        icon: nextjs
+      - title: Tailwind CSS
+        icon: tailwindcss
       - title: Git
         icon: git
+      - title: PyTest
+        icon: pytest
       - title: Postman
         icon: postman
+      - title: Shell / Bash
+        icon: bash
 
 projects:
   - title: "Personal page"
@@ -96,11 +150,11 @@ projects:
       demo: "https://octoprofile-six.vercel.app/"
 
 location:
-  title: "Belarus, Brest"
+  title: "Belarus / Poland"
   link: "https://goo.gl/maps/BAi5Zq9nxcWkNVpi9"
 
 contacts:
-  phone: "3752092078386"
+  phone: "+375255002929"
   email: "sergeyskorokhod2@gmail.com"
 
 socials:

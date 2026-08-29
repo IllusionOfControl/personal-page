@@ -18,7 +18,7 @@ const Skills = ({ skills }) => {
                   <p className="text-2xl text-rose-500 opacity-70 pb-2">
                     {skill.name}
                   </p>
-                  <ul className="grid grid-cols-4 gap-4">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
                     {skill.tools.map((tool) => (
                       <li
                         className="bg-neutral-900 p-2 rounded-lg flex items-center border border-neutral-900 hover:border hover:border-rose-900 dark:bg-neutral-900 transition-colors"
