@@ -8,7 +8,10 @@ export default function Home({ hero, skills, contacts, socials, location }) {
     <>
       <Head>
         <title>Sergey Skorokhod | Portfolio</title>
-        <meta name="description" content="Personal portfolio of Sergey Skorokhod - Python Backend & Full Stack Developer" />
+        <meta
+          name="description"
+          content="Personal portfolio of Sergey Skorokhod - Python Backend & Full Stack Developer"
+        />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>

@@ -28,7 +28,8 @@ const NavBar = () => {
             const isActive =
               item.href === "/"
                 ? currentPath === "/"
-                : currentPath === item.href || currentPath.startsWith(`${item.href}/`);
+                : currentPath === item.href ||
+                  currentPath.startsWith(`${item.href}/`);
 
             return (
               <Link

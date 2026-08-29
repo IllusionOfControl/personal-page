@@ -4,7 +4,10 @@ import { FaGitAlt, FaGithub, FaLink } from "react-icons/fa";
 const Projects = ({ projects = [] }) => {
   if (!projects.length) return null;
   return (
-    <section className="bg-neutral-900 py-16 sm:py-28 scroll-mt-24" id="projects">
+    <section
+      className="bg-neutral-900 py-16 sm:py-28 scroll-mt-24"
+      id="projects"
+    >
       <div className="max-w-[1240px] px-4 mx-auto md:px-10">
         <h1 className="text-5xl">
           Featured <span className="text-rose-800">projects</span>

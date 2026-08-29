@@ -39,6 +39,7 @@ Git's `includeIf` directive allows conditionally loading dedicated configuration
 Create specific configurations for each context:
 
 **`~/.gitconfig-personal`** (Personal projects):
+
 ```ini
 [user]
     name = Sergey Skorokhod
@@ -46,6 +47,7 @@ Create specific configurations for each context:
 ```
 
 **`~/.gitconfig-work-ms`** (Work - Microsoft):
+
 ```ini
 [user]
     name = Sergey Skorokhod
@@ -53,6 +55,7 @@ Create specific configurations for each context:
 ```
 
 **`~/.gitconfig-work-google`** (Work - Google):
+
 ```ini
 [user]
     name = Sergey Skorokhod
@@ -88,6 +91,7 @@ Now edit your global Git config file (`~/.gitconfig` or `%USERPROFILE%\.gitconfi
 ```
 
 > **Windows Tip:** On Windows, always use forward slashes `/` in `gitdir:`. For case-insensitive path matching on NTFS, use `gitdir/i:`:
+>
 > ```ini
 > [includeIf "gitdir/i:C:/Users/sergey/git/work/"]
 >     path = C:/Users/sergey/.gitconfig-work
@@ -142,6 +146,7 @@ git config --show-origin user.email
 ```
 
 Output example:
+
 ```text
 file:/home/sergey/.gitconfig-work-ms    sergey@microsoft-partner.com
 ```

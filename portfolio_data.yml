@@ -128,7 +128,8 @@ projects:
     links:
       github: "https://github.com/IllusionOfControl/UCSD-PIC-Source"
   - title: "BSUIR Computer Science Repo"
-    stack: ["C++", "Algorithms", "Data Structures", "Computer Graphics", "Databases"]
+    stack:
+      ["C++", "Algorithms", "Data Structures", "Computer Graphics", "Databases"]
     description: "Extensive repository containing laboratory and practical work done at the university."
     links:
       github: "https://github.com/IllusionOfControl/bsuir-repo"

@@ -27,7 +27,9 @@ const Skills = ({ skills }) => {
                         <div className="p-2 items-center justify-center rounded-lg bg-neutral-800 ">
                           <PortfolioIcon width={32} icon={tool.icon} />
                         </div>
-                        <p className="pl-4 opacity-70 select-none">{tool.title}</p>
+                        <p className="pl-4 opacity-70 select-none">
+                          {tool.title}
+                        </p>
                       </li>
                     ))}
                   </ul>
