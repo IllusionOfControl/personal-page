@@ -1,17 +1,26 @@
 import React from "react";
+import { useRouter } from "next/router";
 import PortfolioIcon from "@/icons";
 import { SkillCategory } from "@/types";
+import { getDictionary } from "@/locales";
 
 interface SkillsProps {
   skills: SkillCategory[];
 }
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
+  const router = useRouter();
+  const dict = getDictionary(router.locale || "en");
+
   return (
     <section className="container mx-auto py-10 scroll-mt-24" id="skills">
       <h1 className="text-3xl font-bold">
-        <span className="text-neutral-800 dark:text-neutral-200">I can work </span>
-        <span className="text-rose-700 dark:text-rose-600">with</span>
+        <span className="text-neutral-800 dark:text-neutral-200">
+          {dict.skills.titlePrefix}
+        </span>
+        <span className="text-rose-700 dark:text-rose-600">
+          {dict.skills.titleSuffix}
+        </span>
       </h1>
       <hr className="border-neutral-200 dark:border-neutral-800 border-1 my-4" />
       <div>

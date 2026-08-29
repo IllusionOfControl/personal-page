@@ -10,14 +10,21 @@ import {
 } from "react-icons/fa";
 import { Navbar, Footer } from "@/components";
 import { loadData } from "@/utils/data-loader";
+import { getDictionary } from "@/locales";
 import { NowData } from "@/types";
 
 interface NowPageProps {
   now: NowData;
+  locale: string;
 }
 
-export default function NowPage({ now }: NowPageProps) {
+export default function NowPage({ now, locale }: NowPageProps) {
   if (!now) return null;
+  const dict = getDictionary(locale);
+  const isRu = locale === "ru";
+  const title = isRu
+    ? `${now.title || "Сейчас"} | Сергей Скороход`
+    : `${now.title || "Now"} | Sergey Skorokhod`;
 
   const sectionIcons: Record<string, React.ReactElement> = {
     focus: (
@@ -37,11 +44,8 @@ export default function NowPage({ now }: NowPageProps) {
   return (
     <>
       <Head>
-        <title>Now | Sergey Skorokhod</title>
-        <meta
-          name="description"
-          content="What I am currently focusing on, learning, and playing."
-        />
+        <title>{title}</title>
+        <meta name="description" content={now.description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
@@ -57,7 +61,15 @@ export default function NowPage({ now }: NowPageProps) {
               {now.description}
             </p>
             <p className="text-xs text-neutral-500 font-mono">
-              {now.last_updated}
+              {now.last_updated} · {dict.now.listedOn}{" "}
+              <Link
+                href="https://nownownow.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-rose-600 dark:hover:text-rose-400"
+              >
+                nownownow.com
+              </Link>
             </p>
           </header>
 
@@ -126,12 +138,15 @@ export default function NowPage({ now }: NowPageProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<NowPageProps> = async () => {
-  const data = loadData();
+export const getStaticProps: GetStaticProps<NowPageProps> = async ({
+  locale = "en",
+}) => {
+  const data = loadData(locale);
 
   return {
     props: {
       now: data.now || ({} as NowData),
+      locale,
     },
   };
 };

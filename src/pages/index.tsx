@@ -17,6 +17,7 @@ interface HomePageProps {
   contacts: ContactsData;
   socials: SocialsData;
   location: LocationData;
+  locale: string;
 }
 
 export default function Home({
@@ -25,15 +26,21 @@ export default function Home({
   contacts,
   socials,
   location,
+  locale,
 }: HomePageProps) {
+  const isRu = locale === "ru";
+  const title = isRu
+    ? "Сергей Скороход | Портфолио"
+    : "Sergey Skorokhod | Portfolio";
+  const description = isRu
+    ? "Персональное портфолио Сергея Скорохода - Python Backend & Full Stack разработчик"
+    : "Personal portfolio of Sergey Skorokhod - Python Backend & Full Stack Developer";
+
   return (
     <>
       <Head>
-        <title>Sergey Skorokhod | Portfolio</title>
-        <meta
-          name="description"
-          content="Personal portfolio of Sergey Skorokhod - Python Backend & Full Stack Developer"
-        />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
@@ -48,8 +55,10 @@ export default function Home({
   );
 }
 
-export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const data = loadData();
+export const getStaticProps: GetStaticProps<HomePageProps> = async ({
+  locale = "en",
+}) => {
+  const data = loadData(locale);
 
   return {
     props: {
@@ -58,6 +67,7 @@ export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
       contacts: data.contacts || ({} as ContactsData),
       location: data.location || ({} as LocationData),
       socials: data.socials || ({} as SocialsData),
+      locale,
     },
   };
 };

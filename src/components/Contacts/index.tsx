@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   FaSearchLocation,
   FaTelegram,
@@ -10,6 +11,7 @@ import {
   FaPhone,
 } from "react-icons/fa";
 import { ContactsData, LocationData, SocialsData } from "@/types";
+import { getDictionary } from "@/locales";
 
 interface ContactsProps {
   location: LocationData;
@@ -18,11 +20,18 @@ interface ContactsProps {
 }
 
 const Contacts: React.FC<ContactsProps> = ({ location, contacts, socials }) => {
+  const router = useRouter();
+  const dict = getDictionary(router.locale || "en");
+
   return (
     <section className="mx-auto container py-12 scroll-mt-24" id="contacts">
       <h1 className="text-3xl font-bold">
-        <span className="text-neutral-800 dark:text-neutral-200">Contact with </span>
-        <span className="text-rose-700 dark:text-rose-600">me</span>
+        <span className="text-neutral-800 dark:text-neutral-200">
+          {dict.contacts.titlePrefix}
+        </span>
+        <span className="text-rose-700 dark:text-rose-600">
+          {dict.contacts.titleSuffix}
+        </span>
       </h1>
       <hr className="border-neutral-200 dark:border-neutral-800 border-1 my-4" />
       <div className="mx-auto">

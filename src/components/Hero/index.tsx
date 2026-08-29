@@ -1,19 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { HeroData } from "@/types";
+import { getDictionary } from "@/locales";
 
 interface HeroProps {
   hero: HeroData;
 }
 
 const Hero: React.FC<HeroProps> = ({ hero }) => {
+  const router = useRouter();
+  const dict = getDictionary(router.locale || "en");
+
   return (
     <section className="container mx-auto pt-28 pb-14" id="about">
       <div className="flex justify-between portrait:flex-wrap-reverse flex-nowrap gap-8 items-center">
         <div className="my-auto w-full md:w-3/5">
           <h2 className="text-2xl max-lg:text-2xl max-md:text-xl mb-1 text-neutral-900 dark:text-white font-medium">
-            Hi 👋, my name is
+            {dict.hero.greeting}
             <span className="text-2xl max-lg:text-4xl text-rose-700 dark:text-rose-600 ml-2 font-bold">
               {hero.name}
             </span>
@@ -33,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ hero }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              📃 View my CV
+              {dict.hero.viewCv}
             </Link>
           )}
         </div>

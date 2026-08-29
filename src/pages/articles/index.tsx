@@ -5,21 +5,29 @@ import { GetStaticProps } from "next";
 import { FaCalendarAlt, FaClock, FaArrowRight } from "react-icons/fa";
 import { Navbar, Footer } from "@/components";
 import { getAllArticles } from "@/utils/articles";
+import { getDictionary } from "@/locales";
 import { ArticleMeta } from "@/types";
 
 interface ArticlesPageProps {
   articles: ArticleMeta[];
+  locale: string;
 }
 
-export default function ArticlesPage({ articles = [] }: ArticlesPageProps) {
+export default function ArticlesPage({
+  articles = [],
+  locale,
+}: ArticlesPageProps) {
+  const dict = getDictionary(locale);
+  const isRu = locale === "ru";
+  const title = isRu
+    ? "Статьи и заметки | Сергей Скороход"
+    : "Articles & Notes | Sergey Skorokhod";
+
   return (
     <>
       <Head>
-        <title>Articles | Sergey Skorokhod</title>
-        <meta
-          name="description"
-          content="Articles, tutorials, and engineering notes on backend development, home labs, Docker, and distributed systems."
-        />
+        <title>{title}</title>
+        <meta name="description" content={dict.articles.subtitle} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
@@ -29,12 +37,13 @@ export default function ArticlesPage({ articles = [] }: ArticlesPageProps) {
           {/* Header */}
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-3">
-              Articles &{" "}
-              <span className="text-rose-700 dark:text-rose-600">Notes</span>
+              {dict.articles.titlePrefix}
+              <span className="text-rose-700 dark:text-rose-600">
+                {dict.articles.titleSuffix}
+              </span>
             </h1>
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg">
-              Thoughts on backend architecture, self-hosted infrastructure, AI
-              workflows, and software craftsmanship.
+              {dict.articles.subtitle}
             </p>
           </div>
 
@@ -42,7 +51,7 @@ export default function ArticlesPage({ articles = [] }: ArticlesPageProps) {
           {articles.length === 0 ? (
             <div className="text-center py-16 border border-dashed border-neutral-300 dark:border-neutral-800 rounded-2xl">
               <p className="text-neutral-500 dark:text-neutral-400">
-                No articles published yet. Check back soon!
+                {dict.articles.empty}
               </p>
             </div>
           ) : (
@@ -84,7 +93,7 @@ export default function ArticlesPage({ articles = [] }: ArticlesPageProps) {
                       </div>
 
                       <span className="inline-flex items-center gap-2 text-xs font-semibold text-rose-600 dark:text-rose-500 group-hover:translate-x-1 transition-transform">
-                        Read article <FaArrowRight />
+                        {dict.articles.readArticle} <FaArrowRight />
                       </span>
                     </div>
                   </Link>
@@ -99,12 +108,15 @@ export default function ArticlesPage({ articles = [] }: ArticlesPageProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<ArticlesPageProps> = async () => {
-  const articles = getAllArticles();
+export const getStaticProps: GetStaticProps<ArticlesPageProps> = async ({
+  locale = "en",
+}) => {
+  const articles = getAllArticles(locale);
 
   return {
     props: {
       articles,
+      locale,
     },
   };
 };

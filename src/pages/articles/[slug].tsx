@@ -2,17 +2,27 @@ import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { FaCalendarAlt, FaClock, FaArrowLeft, FaTag } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaClock,
+  FaArrowLeft,
+  FaTag,
+  FaGlobe,
+} from "react-icons/fa";
 import { Navbar, Footer } from "@/components";
 import { getAllArticleSlugs, getArticleBySlug } from "@/utils/articles";
+import { getDictionary } from "@/locales";
 import { ArticleData } from "@/types";
 
 interface ArticlePageProps {
   article: ArticleData | null;
+  locale: string;
 }
 
-export default function ArticlePage({ article }: ArticlePageProps) {
+export default function ArticlePage({ article, locale }: ArticlePageProps) {
   const contentRef = useRef<HTMLDivElement>(null);
+  const dict = getDictionary(locale);
+  const otherLocale = locale === "ru" ? "en" : "ru";
 
   useEffect(() => {
     if (!contentRef.current) return;
@@ -29,7 +39,7 @@ export default function ArticlePage({ article }: ArticlePageProps) {
       let lang = "";
       if (codeEl) {
         const langClass = Array.from(codeEl.classList).find((c) =>
-          c.startsWith("language-")
+          c.startsWith("language-"),
         );
         if (langClass) {
           lang = langClass.replace("language-", "").toUpperCase();
@@ -99,12 +109,25 @@ export default function ArticlePage({ article }: ArticlePageProps) {
       <Navbar />
       <main className="min-h-screen pt-28 pb-16">
         <article className="container mx-auto px-4 max-w-3xl">
-          <div className="mb-8">
+          <div className="mb-8 flex items-center justify-between">
             <Link
               href="/articles"
               className="inline-flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400 hover:text-rose-600 dark:hover:text-rose-400 transition-colors font-medium"
             >
-              <FaArrowLeft /> Back to all articles
+              <FaArrowLeft /> {dict.articles.backToAll}
+            </Link>
+
+            {/* Language toggle badge for this article */}
+            <Link
+              href={`/articles/${article.slug}`}
+              locale={otherLocale}
+              className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1 rounded-full bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 text-neutral-700 dark:text-neutral-300 hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
+            >
+              <FaGlobe size={11} className="text-rose-600 dark:text-rose-400" />
+              <span>
+                {dict.articles.alsoAvailableIn}{" "}
+                <strong>{dict.articles.otherLangName}</strong>
+              </span>
             </Link>
           </div>
 
@@ -167,7 +190,7 @@ export default function ArticlePage({ article }: ArticlePageProps) {
               href="/articles"
               className="inline-flex items-center gap-2 text-sm text-rose-700 dark:text-rose-400 hover:text-rose-600 dark:hover:text-rose-300 transition-colors font-medium"
             >
-              <FaArrowLeft /> Back to all articles
+              <FaArrowLeft /> {dict.articles.backToAll}
             </Link>
           </div>
         </article>
@@ -188,13 +211,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<ArticlePageProps> = async ({
   params,
+  locale = "en",
 }) => {
   const slug = params?.slug as string;
-  const article = await getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug, locale);
 
   return {
     props: {
       article,
+      locale,
     },
   };
 };

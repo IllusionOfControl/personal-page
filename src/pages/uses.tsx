@@ -4,23 +4,27 @@ import Link from "next/link";
 import { GetStaticProps } from "next";
 import { Navbar, Footer } from "@/components";
 import { loadData } from "@/utils/data-loader";
+import { getDictionary } from "@/locales";
 import { UsesData } from "@/types";
 
 interface UsesPageProps {
   uses: UsesData;
+  locale: string;
 }
 
-export default function UsesPage({ uses }: UsesPageProps) {
+export default function UsesPage({ uses, locale }: UsesPageProps) {
   if (!uses) return null;
+  const dict = getDictionary(locale);
+  const isRu = locale === "ru";
+  const title = isRu
+    ? `${uses.title || "Оборудование"} | Сергей Скороход`
+    : `${uses.title || "Uses"} | Sergey Skorokhod`;
 
   return (
     <>
       <Head>
-        <title>Uses | Sergey Skorokhod</title>
-        <meta
-          name="description"
-          content="The tools, gadgets, and software I use on a daily basis."
-        />
+        <title>{title}</title>
+        <meta name="description" content={uses.description} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
@@ -37,7 +41,7 @@ export default function UsesPage({ uses }: UsesPageProps) {
             </p>
             {uses.note && (
               <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                This page is listed on{" "}
+                {dict.uses.listedOn}{" "}
                 <Link
                   href="https://uses.tech"
                   target="_blank"
@@ -46,7 +50,7 @@ export default function UsesPage({ uses }: UsesPageProps) {
                 >
                   uses.tech
                 </Link>{" "}
-                and inspired by{" "}
+                {dict.uses.inspiredBy}{" "}
                 <Link
                   href="https://wesbos.com"
                   target="_blank"
@@ -96,12 +100,15 @@ export default function UsesPage({ uses }: UsesPageProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<UsesPageProps> = async () => {
-  const data = loadData();
+export const getStaticProps: GetStaticProps<UsesPageProps> = async ({
+  locale = "en",
+}) => {
+  const data = loadData(locale);
 
   return {
     props: {
       uses: data.uses || ({} as UsesData),
+      locale,
     },
   };
 };

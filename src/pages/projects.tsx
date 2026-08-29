@@ -5,21 +5,29 @@ import { GetStaticProps } from "next";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { Navbar, Footer } from "@/components";
 import { loadData } from "@/utils/data-loader";
+import { getDictionary } from "@/locales";
 import { ProjectItem } from "@/types";
 
 interface ProjectsPageProps {
   projects: ProjectItem[];
+  locale: string;
 }
 
-export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
+export default function ProjectsPage({
+  projects = [],
+  locale,
+}: ProjectsPageProps) {
+  const dict = getDictionary(locale);
+  const isRu = locale === "ru";
+  const title = isRu
+    ? "Проекты | Сергей Скороход"
+    : "Projects | Sergey Skorokhod";
+
   return (
     <>
       <Head>
-        <title>Projects | Sergey Skorokhod</title>
-        <meta
-          name="description"
-          content="Featured projects, open source, and web applications by Sergey Skorokhod."
-        />
+        <title>{title}</title>
+        <meta name="description" content={dict.projects.subtitle} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
@@ -28,12 +36,13 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
         <section className="container mx-auto px-4">
           <div className="mb-10">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-3 text-neutral-900 dark:text-white tracking-tight">
-              Featured{" "}
-              <span className="text-rose-700 dark:text-rose-600">Projects</span>
+              {dict.projects.titlePrefix}
+              <span className="text-rose-700 dark:text-rose-600">
+                {dict.projects.titleSuffix}
+              </span>
             </h1>
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg">
-              A collection of web services, bots, tools, and experiments I have
-              built.
+              {dict.projects.subtitle}
             </p>
           </div>
 
@@ -55,7 +64,7 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
-                          title="Source code on GitHub"
+                          title={dict.projects.githubAria}
                         >
                           <FaGithub />
                         </Link>
@@ -66,7 +75,7 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:text-rose-600 dark:hover:text-rose-400 transition-colors"
-                          title="Live demo"
+                          title={dict.projects.demoAria}
                         >
                           <FaLink />
                         </Link>
@@ -94,7 +103,7 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
 
           <div className="text-center py-8 border-t border-neutral-200 dark:border-neutral-900">
             <h3 className="text-2xl font-mono text-neutral-800 dark:text-neutral-300 mb-4">
-              And many more on GitHub...
+              {dict.projects.andMore}
             </h3>
             <Link
               href="https://github.com/IllusionOfControl"
@@ -102,7 +111,7 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
               rel="noopener noreferrer"
               className="inline-block px-5 py-2.5 rounded-full border border-rose-700 hover:bg-rose-700 text-neutral-800 dark:text-neutral-200 hover:text-white dark:hover:text-white transition-all font-medium text-sm shadow-xs"
             >
-              🚀 Visit my GitHub
+              {dict.projects.visitGithub}
             </Link>
           </div>
         </section>
@@ -112,12 +121,15 @@ export default function ProjectsPage({ projects = [] }: ProjectsPageProps) {
   );
 }
 
-export const getStaticProps: GetStaticProps<ProjectsPageProps> = async () => {
-  const data = loadData();
+export const getStaticProps: GetStaticProps<ProjectsPageProps> = async ({
+  locale = "en",
+}) => {
+  const data = loadData(locale);
 
   return {
     props: {
       projects: data.projects || [],
+      locale,
     },
   };
 };
