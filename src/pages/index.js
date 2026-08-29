@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Hero, About, Skills, Projects, Contacts, Footer } from "../components";
+import { Hero, Skills, Contacts, Footer } from "../components";
 import Navbar from "../components/Navbar";
 import { loadData } from "../utils/data-loader";
 
@@ -18,9 +18,7 @@ export default function Home({ hero, skills, contacts, socials, location }) {
       <Navbar />
       <main>
         <Hero hero={hero} />
-        {/*<About about={about} />*/}
         <Skills skills={skills} />
-        {/*<Projects />*/}
         <Contacts contacts={contacts} socials={socials} location={location} />
       </main>
       <Footer />
@@ -33,10 +31,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      hero: data.hero || null,
-      about: data.about || null,
+      hero: data.hero || {},
       skills: data.skills || [],
-      projects: data.projects || [],
       contacts: data.contacts || {},
       location: data.location || {},
       socials: data.socials || {},
