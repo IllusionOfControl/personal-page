@@ -61,15 +61,7 @@ export default function NowPage({ now, locale }: NowPageProps) {
               {now.description}
             </p>
             <p className="text-xs text-neutral-500 font-mono">
-              {now.last_updated} · {dict.now.listedOn}{" "}
-              <Link
-                href="https://nownownow.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-rose-600 dark:hover:text-rose-400"
-              >
-                nownownow.com
-              </Link>
+              {now.last_updated}
             </p>
           </header>
 

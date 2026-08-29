@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   const dict = getDictionary(router.locale || "en");
 
   return (
-    <footer className="w-full border-t border-neutral-200 dark:border-neutral-800/80 py-6 bg-white/80 dark:bg-neutral-950/80 text-xs text-neutral-600 dark:text-neutral-400 transition-colors">
+    <footer className="w-full border-t border-neutral-200 dark:border-neutral-800/80 py-6 pb-24 md:pb-6 bg-white/80 dark:bg-neutral-950/80 text-xs text-neutral-600 dark:text-neutral-400 transition-colors">
       <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p>{dict.footer.rights}</p>
         <div className="flex items-center gap-4 font-medium">
